@@ -1,86 +1,126 @@
-body
-{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: Roboto, sans-serif;
-    margin: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.top 
-{
+body {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #f5f5f5;
+    font-family: Roboto, sans-serif;
+}
+
+.page {
+    display: flex;
+    width: 1400px;
+}
+
+.top {
+    /* container: top / inline-size; */
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding: 50px 7%;
+    padding: 5% 7%;
+    /* position: relative; */
 }
 
-.site-header, .hero
-{
+.site-header {
+    /* container: site-header / inline-size; */
+}
+.site-header,
+.hero {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
 }
 
-.hero
-{
+.hero {
+    /* container: hero / inline-size; */
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 40px 0px;
 }
 
-ul
-{
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
-li
-{
-    font-size: 22px;
+li {
+    font-size: 27px;
 }
 
-a
-{
+a {
     text-decoration: none;
     color: #F9FAF8;
 }
 
-.hero-left
-{
+.hero-left {
     display: flex;
     flex-direction: column;
+    width: 55%;
 }
 
-.monster
-{
-    margin-top: -120px;
-    width: 500px;
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    width: 45%;
     height: auto;
 }
 
-.largeText
-{
-    font-size: 60px;
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heroButton button {
+    background-color: #3882F6;
+    color: white;
+    padding: 1.5% 5%;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.largeText {
+    font-size: 4.2rem;
     font-weight: 800;
     padding-bottom: 20px;
-    width: 500px;
+    width: 100%;
     color: #F9FAF8;
 }
 
-.smallText
-{
-    font-size: 25px;
+.smallText {
+    font-size: 1.7rem;
     color: #E5E7EB;
-    width: 500px;
+    width: 100%;
+    line-height: 1.5;
 }
 
-.logo
-{
-    width: 150px;
+.logo {
+    /* container: logo / inline-size; */
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
     height: auto;
+    padding: 0 30px;
 }
 
+.links {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+/* .links li {
+    width: 30%;
+} */

@@ -87,9 +87,13 @@ a {
     color: white;
     padding: 1.5% 5%;
     font-size: 1.5rem;
-    margin-top: 12px;
+    margin-top: 2%;
     border-radius: 10px;
     border: 0;
+}
+
+.heroButton button:hover {
+    background-color: #50A0F0;
 }
 
 .largeText {

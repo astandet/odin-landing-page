@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: green;
+    font-family: Roboto, sans-serif;
+}
+
+.page {
+    display: flex;
+    width: 1400px;
+}
+
+.top {
+    /* container: top / inline-size; */
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    padding: 5% 7%;
+    /* position: relative; */
+}
+
+.site-header {
+    /* container: site-header / inline-size; */
+}
+.site-header,
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    /* container: hero / inline-size; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    font-size: 27px;
+    a:hover { text-decoration: underline; text-decoration-color: rgb(119, 242, 24); }
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    width: 45%;
+    height: auto;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heroButton button {
+    background-color: #3882F6;
+    color: white;
+    padding: 1.5% 5%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 0;
+}
+
+.heroButton button:hover {
+    background-color: #50A0F0;
+}
+
+.largeText {
+    font-size: 4.2rem;
+    font-weight: 800;
+    padding-bottom: 20px;
+    width: 100%;
+    color: #F9FAF8;
+}
+
+.smallText {
+    font-size: 1.7rem;
+    color: #E5E7EB;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.logo {
+    /* container: logo / inline-size; */
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    padding: 0 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}

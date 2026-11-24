@@ -4,17 +4,27 @@
     box-sizing: border-box;
 }
 
-body {
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .heroButton, .logo, .factCards, .quote, .call2action {
     display: flex;
+}
+
+.page, .top, .hero-left {
+    flex-direction: column;
+}
+
+body {
     justify-content: center;
     margin: auto;
     background-color: green;
     font-family: Roboto, sans-serif;
 }
 
+.factCards {
+    container: top / size;
+    aspect-ratio: 2 / 1;
+}
+
 .page {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 1400px;
     min-width: 0;
@@ -26,32 +36,25 @@ body {
     position: relative;
     width: 100%;
     max-width: 1400px;
-    display: flex;
-    flex-direction: column;
     background-color: #1F2937;
     padding: 5% 7% 0%;
 }
 
 .site-header,
 .hero {
-    display: flex;
     justify-content: space-between;
 }
 
 .hero {
-    justify-content: space-between;
     align-items: flex-start;
     padding: 4.5cqw 0 0;
 }
 
 .hero-left {
-    display: flex;
-    flex-direction: column;
     width: 55%;
 }
 
 .hero-right {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -17.5cqw;
@@ -67,7 +70,6 @@ body {
 }
 
 .links {
-    display: flex;
     justify-content: flex-end;
     width: 50%;
 }
@@ -76,7 +78,6 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
     gap: 1.5cqw;
 }
 
@@ -135,7 +136,6 @@ body {
 }
 
 .logo {
-    display: flex;
     justify-content: flex-start;
     width: 50%;
     height: auto;
@@ -145,4 +145,12 @@ body {
 .logo img {
     width: 16cqw;
     height: auto;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
 }

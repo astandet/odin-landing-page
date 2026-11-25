@@ -21,6 +21,8 @@ body {
 
 button {
     white-space: nowrap;
+    background-color: transparent;
+    font-weight: 500;
 }
 
 .page {
@@ -111,11 +113,11 @@ button {
 }
 
 .blueButton .cta-btn {
-    border: 0.25cqw solid white;
-    background-color: transparent;
+    border: 0.2cqw solid white;
     font-size: 1.7cqw;
     margin: 1cqw;
-    padding: 0.5cqw 3cqw;
+    padding: 0.3cqw 3cqw;
+    border-radius: 0.7cqw;
 }
 
 .blueButton button:hover {

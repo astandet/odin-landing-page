@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .heroButton, .logo, .factCards, .quote, .call2action {
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText {
     display: flex;
 }
 
-.page, .top, .hero-left {
+.page, .top, .quoteMiddle, .hero-left, .call2ActText {
     flex-direction: column;
 }
 
@@ -19,9 +19,8 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.factCards {
-    container: top / size;
-    aspect-ratio: 2 / 1;
+button {
+    white-space: nowrap;
 }
 
 .page {
@@ -96,11 +95,11 @@ body {
     text-decoration-color: rgb(74, 222, 128);
 }
 
-.heroButton {
+.blueButton {
     display: flex;
 }
 
-.heroButton button {
+.blueButton button {
     font-family: inherit;
     background-color: #3882F6;
     color: white;
@@ -111,7 +110,15 @@ body {
     border: 0;
 }
 
-.heroButton button:hover {
+.blueButton .cta-btn {
+    border: 0.25cqw solid white;
+    background-color: transparent;
+    font-size: 1.7cqw;
+    margin: 1cqw;
+    padding: 0.5cqw 3cqw;
+}
+
+.blueButton button:hover {
     background-color: #50A0F0;
 }
 
@@ -147,10 +154,85 @@ body {
     height: auto;
 }
 
+.factCards, .quote, .call2action, .footer {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.factCards {
+    container: factCards / inline-size;
+    /* aspect-ratio: 2 / 1; */
+}
+
 .quote {
-    background-color: #E5E7EB;
-    font-size: 36px;
+    container: factCards / inline-size;
+    background-color: #cfd0d3;
     color: #1F2937;
+}
+
+.quoteText {
     font-weight: 300;
     font-style: italic;
+    font-size: 3cqw;
+    line-height: 1.3;
+}
+
+.quoteAuthor {
+    font-weight: 500;
+    font-size: 1.6cqw;
+    justify-content: flex-end;
+    /* margin-right: 2cqw; */
+}
+
+.quoteMiddle {
+    width: 70cqw;
+    justify-content: center;
+    align-content: center;
+    margin: 7cqw auto;
+    /* gap: 0.8cqw; */
+}
+
+.call2action {
+    container: call2action / inline-size;
+    background-color: white;
+}
+
+.footer {
+    container: footer / inline-size;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 1.5cqw;
+    padding: 3.5cqw 0;
+    color: #E5E7EB;
+}
+
+.call1, .call2 {color: white;}
+
+.call1 {
+    font-size: 2cqw;
+    font-weight: 700;
+}
+
+.call2 {
+    font-size: 1.5cqw;
+    font-weight: 300;
+}
+
+.blueRectangle {
+    background-color: #3882F6;
+    width: 75cqw;
+    margin: 10cqw auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8cqw;
+}
+
+.call2ActText {
+    padding: 5cqw;
+    gap: 0.5cqw;
 }

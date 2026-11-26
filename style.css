@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText {
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower  {
     display: flex;
 }
 
-.page, .top, .quoteMiddle, .hero-left, .call2ActText {
+.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr {
     flex-direction: column;
 }
 
@@ -33,7 +33,6 @@ button {
 
 .top {
     container: top / inline-size;
-    /* aspect-ratio: 1400 / 710; */
     position: relative;
     width: 100%;
     max-width: 1400px;
@@ -162,9 +161,45 @@ button {
     max-width: 1400px;
 }
 
+.factCards, .call2action {
+    background-color: #F9FAF8;
+}
+
 .factCards {
     container: factCards / inline-size;
-    /* aspect-ratio: 2 / 1; */
+}
+
+.factHeading {
+    font-size: 2.7cqw;
+    font-weight: 900;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 3cqw 0;
+    letter-spacing: 0.1cqw;
+}
+
+.CDlower {
+    justify-content: center;
+    gap: 3.5cqw;width: 100%;
+    margin-bottom: 7cqw;
+}
+
+.cardDescr {
+    width: 15cqw;
+    gap: 1cqw;
+}
+
+.CDpix {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border: 0.3cqw solid #50A0F0;
+    border-radius: 1.5cqw;
+    overflow: hidden;
+}
+
+.CDdescr {
+    font-size: 1.5cqw;
+    text-align: left;
 }
 
 .quote {
@@ -184,7 +219,6 @@ button {
     font-weight: 500;
     font-size: 1.6cqw;
     justify-content: flex-end;
-    /* margin-right: 2cqw; */
 }
 
 .quoteMiddle {
@@ -192,12 +226,36 @@ button {
     justify-content: center;
     align-content: center;
     margin: 7cqw auto;
-    /* gap: 0.8cqw; */
 }
 
 .call2action {
     container: call2action / inline-size;
-    background-color: white;
+}
+
+.call1, .call2 {color: white;}
+
+.call1 {
+    font-size: 2cqw;
+    font-weight: 700;
+}
+
+.call2 {
+    font-size: 1.5cqw;
+    font-weight: 300;
+}
+
+.call2ActText {
+    padding: 5cqw;
+    gap: 0.5cqw;
+}
+
+.blueRectangle {
+    background-color: #3882F6;
+    width: 75cqw;
+    margin: 10cqw auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8cqw;
 }
 
 .footer {
@@ -213,28 +271,3 @@ button {
     color: #E5E7EB;
 }
 
-.call1, .call2 {color: white;}
-
-.call1 {
-    font-size: 2cqw;
-    font-weight: 700;
-}
-
-.call2 {
-    font-size: 1.5cqw;
-    font-weight: 300;
-}
-
-.blueRectangle {
-    background-color: #3882F6;
-    width: 75cqw;
-    margin: 10cqw auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.8cqw;
-}
-
-.call2ActText {
-    padding: 5cqw;
-    gap: 0.5cqw;
-}

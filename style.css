@@ -192,7 +192,7 @@ button {
 .CDpix {
     aspect-ratio: 1 / 1;
     width: 100%;
-    border: 0.3cqw solid #50A0F0;
+    border: 0.4cqw solid #50A0F0;
     border-radius: 1.5cqw;
     overflow: hidden;
 }

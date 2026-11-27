@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower  {
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower, .CDpix .icon, .CDpix .text  {
     display: flex;
 }
 
-.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr {
+.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr, .CDpix {
     flex-direction: column;
 }
 
@@ -195,6 +195,31 @@ button {
     border: 0.4cqw solid #50A0F0;
     border-radius: 1.5cqw;
     overflow: hidden;
+    gap: 1cqw;
+}
+
+.CDpix .icon {
+    flex: 0 0 9cqw;
+    width: 9cqw;
+    align-self: center;
+    font-size: 6cqw;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4cqw 0;
+}
+
+.CDpix .icon img {
+    width: 100%;
+    height: auto;
+}
+
+.CDpix .text {
+    justify-content: center;
+    align-content: center;
+    font-size: 2cqw;
+    font-weight: 500;
+    letter-spacing: 0.1cqw;
 }
 
 .CDdescr {
@@ -203,7 +228,7 @@ button {
 }
 
 .quote {
-    container: factCards / inline-size;
+    container: quote / inline-size;
     background-color: #cfd0d3;
     color: #1F2937;
 }
@@ -270,4 +295,3 @@ button {
     padding: 3.5cqw 0;
     color: #E5E7EB;
 }
-

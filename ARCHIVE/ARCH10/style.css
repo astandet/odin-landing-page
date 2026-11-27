@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower  {
+    display: flex;
+}
+
+.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr {
+    flex-direction: column;
+}
+
+body {
+    justify-content: center;
+    margin: auto;
+    background-color: green;
+    font-family: Roboto, sans-serif;
+}
+
+button {
+    white-space: nowrap;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.page {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 0;
+}
+
+.top {
+    container: top / inline-size;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    background-color: #1F2937;
+    padding: 5% 7% 0%;
+}
+
+.site-header,
+.hero {
+    justify-content: space-between;
+}
+
+.hero {
+    align-items: flex-start;
+    padding: 4.5cqw 0 0;
+}
+
+.hero-left {
+    width: 55%;
+}
+
+.hero-right {
+    justify-content: center;
+    align-items: center;
+    margin-top: -17.5cqw;
+    width: 45%;
+    height: auto;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 7.2cqw;
+}
+
+.links {
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 1.5cqw;
+}
+
+.links li {
+    font-size: 2.24cqw;
+}
+
+.links a {
+    text-decoration: none;
+    color: #F9FAF8;
+    white-space: nowrap;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(74, 222, 128);
+}
+
+.blueButton {
+    display: flex;
+}
+
+.blueButton button {
+    font-family: inherit;
+    background-color: #3882F6;
+    color: white;
+    padding: 1.1cqw 3cqw;
+    font-size: 2cqw;
+    margin-top: 1.3cqw;
+    border-radius: 1cqw;
+    border: 0;
+}
+
+.blueButton .cta-btn {
+    border: 0.2cqw solid white;
+    font-size: 1.7cqw;
+    margin: 1cqw;
+    padding: 0.3cqw 3cqw;
+    border-radius: 0.7cqw;
+}
+
+.blueButton button:hover {
+    background-color: #50A0F0;
+}
+
+.largeText,
+.smallText {
+    padding-bottom: 1.65cqw;
+}
+
+.largeText {
+    font-size: 5.5cqw;
+    font-weight: 800;
+    width: 100%;
+    color: #F9FAF8;
+    line-height: 1.15;
+}
+
+.smallText {
+    font-size: 2.1cqw;
+    color: #E5E7EB;
+    width: 100%;
+    line-height: 1.4;
+}
+
+.logo {
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    padding: 0 2.5cqw;
+}
+
+.logo img {
+    width: 16cqw;
+    height: auto;
+}
+
+.factCards, .quote, .call2action, .footer {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.factCards, .call2action {
+    background-color: #F9FAF8;
+}
+
+.factCards {
+    container: factCards / inline-size;
+}
+
+.factHeading {
+    font-size: 2.7cqw;
+    font-weight: 900;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 3cqw 0;
+    letter-spacing: 0.1cqw;
+}
+
+.CDlower {
+    justify-content: center;
+    gap: 3.5cqw;width: 100%;
+    margin-bottom: 7cqw;
+}
+
+.cardDescr {
+    width: 15cqw;
+    gap: 1cqw;
+}
+
+.CDpix {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border: 0.4cqw solid #50A0F0;
+    border-radius: 1.5cqw;
+    overflow: hidden;
+}
+
+.CDdescr {
+    font-size: 1.5cqw;
+    text-align: center;
+}
+
+.quote {
+    container: factCards / inline-size;
+    background-color: #cfd0d3;
+    color: #1F2937;
+}
+
+.quoteText {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 3cqw;
+    line-height: 1.3;
+}
+
+.quoteAuthor {
+    font-weight: 500;
+    font-size: 1.6cqw;
+    justify-content: flex-end;
+}
+
+.quoteMiddle {
+    width: 70cqw;
+    justify-content: center;
+    align-content: center;
+    margin: 7cqw auto;
+}
+
+.call2action {
+    container: call2action / inline-size;
+}
+
+.call1, .call2 {color: white;}
+
+.call1 {
+    font-size: 2cqw;
+    font-weight: 700;
+}
+
+.call2 {
+    font-size: 1.5cqw;
+    font-weight: 300;
+}
+
+.call2ActText {
+    padding: 5cqw;
+    gap: 0.5cqw;
+}
+
+.blueRectangle {
+    background-color: #3882F6;
+    width: 75cqw;
+    margin: 10cqw auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8cqw;
+}
+
+.footer {
+    container: footer / inline-size;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 1.5cqw;
+    padding: 3.5cqw 0;
+    color: #E5E7EB;
+}
+

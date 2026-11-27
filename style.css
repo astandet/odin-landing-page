@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
-body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower, .CDpix .icon, .CDpix .text, .main-content {
+body, .page, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDlower, .CDpix .icon, .CDpix .text, .main-content {
     display: flex;
 }
 
-.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr, .CDpix, .main-content {
+.page, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr, .CDpix, .main-content {
     flex-direction: column;
+}
+
+.CDpix .text, .CDdescr, .quote, .quoteText, .largeText, .smallText, .quoteAuthor, .call1, .call2, .footerText {
+    margin: 0;
 }
 
 .CDlower {
@@ -21,10 +25,6 @@ body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links 
     margin: 0 0 7cqw;
 }
 
-.CDpix .text, .CDdescr, .quote, .quoteText, .quoteAuthor, .call1, .call2, .footerText {
-    margin: 0;
-}
-
 body {
     justify-content: center;
     margin: auto;
@@ -34,7 +34,6 @@ body {
 
 button {
     white-space: nowrap;
-    background-color: transparent;
     font-weight: 500;
 }
 
@@ -44,9 +43,10 @@ button {
     min-width: 0;
 }
 
-.site-header, .top {
+.site-header, .hero {
     width: 100%;
     background-color: #1F2937;
+    justify-content: space-between;
 }
 
 .site-header {
@@ -55,23 +55,16 @@ button {
 }
 
 .main-content {
-    width: 100%
+    container: mainContent / inline-size;
+    width: 100%;
 }
 
-.top {
-    container: top / inline-size;
-    position: relative;
-    max-width: 1400px;
-    padding: 0% 7% 0%;
-}
 
-.site-header, .hero {
-    justify-content: space-between;
-}
 
 .hero {
+    container: hero / inline-size;
     align-items: flex-start;
-    padding: 4.5cqw 0 0;
+    padding: 3.87cqw 7cqw 0;
 }
 
 .hero-left {
@@ -83,13 +76,11 @@ button {
     align-items: center;
     margin-top: -17.5cqw;
     width: 45%;
-    height: auto;
 }
 
 .hero-right img {
     max-width: 100%;
     height: auto;
-    display: block;
     margin-left: 7.2cqw;
 }
 
@@ -120,10 +111,6 @@ button {
     text-decoration-color: rgb(74, 222, 128);
 }
 
-.blueButton {
-    display: flex;
-}
-
 .blueButton button {
     font-family: inherit;
     background-color: #3882F6;
@@ -145,10 +132,6 @@ button {
 
 .blueButton button:hover {
     background-color: #50A0F0;
-}
-
-.largeText, .smallText, .quoteText {
-    margin: 0;
 }
 
 .largeText,
@@ -174,7 +157,6 @@ button {
 .logo {
     justify-content: flex-start;
     width: 50%;
-    height: auto;
     padding: 0 2.5cqw;
 }
 
@@ -184,7 +166,6 @@ button {
 }
 
 .factCards, .quote, .call2action, .footer {
-    position: relative;
     width: 100%;
     max-width: 1400px;
 }
@@ -238,7 +219,6 @@ button {
 
 .CDpix .text {
     justify-content: center;
-    align-content: center;
     font-size: 2cqw;
     font-weight: 500;
     letter-spacing: 0.1cqw;
@@ -271,7 +251,6 @@ button {
 .quoteMiddle {
     width: 70cqw;
     justify-content: center;
-    align-content: center;
     margin: 7cqw auto;
 }
 

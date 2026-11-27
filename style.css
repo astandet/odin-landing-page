@@ -12,6 +12,19 @@ body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links 
     flex-direction: column;
 }
 
+.CDlower {
+    justify-content: center;
+    gap: 3.5cqw;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 7cqw;
+}
+
+.CDpix .text, .CDdescr, .quote, .quoteText, .quoteAuthor, .call1, .call2, .footerText {
+    margin: 0;
+}
+
 body {
     justify-content: center;
     margin: auto;
@@ -180,12 +193,6 @@ button {
     align-items:flex-start;
     margin: 3cqw 0;
     letter-spacing: 0.1cqw;
-}
-
-.CDlower {
-    justify-content: center;
-    gap: 3.5cqw;width: 100%;
-    margin-bottom: 7cqw;
 }
 
 .cardDescr {

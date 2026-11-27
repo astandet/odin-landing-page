@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower, .CDpix .icon, .CDpix .text  {
+body, .page, .top, .site-header, .hero, .hero-left, .hero-right, .links, .links ul, .blueButton, .logo, .factCards, .quote, .quoteText, .quoteAuthor, .quoteMiddle, .call2action, .footer, .blueRectangle, .call2ActText, .factHeading, .cardDescr, .CDpix, .CDdescr, .CDlower, .CDpix .icon, .CDpix .text, .main-content {
     display: flex;
 }
 
-.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr, .CDpix {
+.page, .top, .quoteMiddle, .hero-left, .call2ActText, .factCards, .cardDescr, .CDpix, .main-content {
     flex-direction: column;
 }
 
@@ -44,17 +44,28 @@ button {
     min-width: 0;
 }
 
+.site-header, .top {
+    width: 100%;
+    background-color: #1F2937;
+}
+
+.site-header {
+    container: siteHeader / inline-size;
+    padding: 5% 7% 0;
+}
+
+.main-content {
+    width: 100%
+}
+
 .top {
     container: top / inline-size;
     position: relative;
-    width: 100%;
     max-width: 1400px;
-    background-color: #1F2937;
-    padding: 5% 7% 0%;
+    padding: 0% 7% 0%;
 }
 
-.site-header,
-.hero {
+.site-header, .hero {
     justify-content: space-between;
 }
 

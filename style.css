@@ -123,6 +123,10 @@ button {
     background-color: #50A0F0;
 }
 
+.largeText, .smallText, .quoteText {
+    margin: 0;
+}
+
 .largeText,
 .smallText {
     padding-bottom: 1.65cqw;
